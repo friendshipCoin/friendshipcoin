@@ -1511,6 +1511,7 @@ public:
         printf("\n");
     }
 
+    void UpdateTime(const CBlockIndex* pindexPrev);
 
     /** Undo the effects of this block (with given index) on the UTXO set represented by coins.
      *  In case pfClean is provided, operation will try to be tolerant about errors, and *pfClean
