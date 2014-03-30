@@ -1097,7 +1097,7 @@ static const int64 nTargetTimespan = 60 * 60; // Friendshipcoin: 60 minutes
 static const int64 nTargetSpacing = 2.5 * 60; // Friendshipcoin: 2.5 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 static const int64 nTargetTimespanRe = 1*60; // 60 Seconds
-static const int64 nTargetSpacingRe = 2.5*60; // 60 seconds
+static const int64 nTargetSpacingRe = 1*60; // 60 seconds
 static const int64 nIntervalRe = nTargetTimespanRe / nTargetSpacingRe; // 1 block
 
 
