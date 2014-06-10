@@ -10,14 +10,14 @@ What is Friendshipcoin?
 ----------------
 
 Friendshipcoin is a half-assed copy of Litecoin developed by some friends for the purpose of learning more about crypto currency
- - 2.5 minute block targets
+ - 1 minute block targets
  - subsidy halves in 200k blocks
  - 37,436,374,470 total coins
  - 0-376,370 coins per block
- - retarget difficulty once per hour
+ - retarget difficulty every block using DigiShield
 
 For more information, as well as an immediately useable, binary version of
-the Friendshipcoin client sofware, see http://www.friendshipcoin.org.
+the Friendshipcoin client sofware, see http://www.friendshipcoins.com.
 
 License
 -------
