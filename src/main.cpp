@@ -1087,15 +1087,15 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash )
                 seed = hex2long(cseed);
                 rand1 = generateMTRandom(seed, 376370);
                 nSubsidy = (1 + rand1) * COIN;
-                nSubsidy >>= (nHeight / 200000);        //block reward will cut in half every 200k blocks 
+               
         }
         else
         {
             nSubsidy = 150000  * COIN;
-            nSubsidy >>= (nHeight / 100000);        //block reward will cut in half every 200k blocks 
+           
         }
         
-         
+          nSubsidy >>= (nHeight / 200000);        //block reward will cut in half every 200k blocks 
  
     return nSubsidy + nFees;
 }
