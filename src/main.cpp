@@ -1078,16 +1078,22 @@ int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash )
     int64 nSubsidy = 1 * COIN;
         int rand1 = 0;
          
-        std::string cseed_str = prevHash.ToString().substr(7,7);
-        const char* cseed = cseed_str.c_str();
-        long seed = hex2long(cseed);
-            cseed = cseed_str.c_str();
-            seed = hex2long(cseed);
-            rand1 = generateMTRandom(seed, 376370);
-            nSubsidy = (1 + rand1) * COIN;
+        if(nHeight < 120000)
+        {
+            std::string cseed_str = prevHash.ToString().substr(7,7);
+            const char* cseed = cseed_str.c_str();
+            long seed = hex2long(cseed);
+                cseed = cseed_str.c_str();
+                seed = hex2long(cseed);
+                rand1 = generateMTRandom(seed, 376370);
+                nSubsidy = (1 + rand1) * COIN;
+        }
+        else
+        {
+            nSubsidy = 150000  * COIN;
+        }
         
-
-         nSubsidy >>= (nHeight / 200000);        //block reward will cut in half every 200k blocks 
+         nSubsidy >>= (nHeight / 100000);        //block reward will cut in half every 200k blocks 
  
     return nSubsidy + nFees;
 }
