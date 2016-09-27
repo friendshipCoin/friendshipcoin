@@ -7,7 +7,7 @@ Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Friendshipcoin Developers
 
 What is Friendshipcoin?
-----------------
+-----------------------
 
 Friendshipcoin is a half-assed copy of Litecoin developed by some friends for the purpose of learning more about crypto currency
  - 1 minute block targets
@@ -17,7 +17,7 @@ Friendshipcoin is a half-assed copy of Litecoin developed by some friends for th
  - retarget difficulty every block using DigiShield
 
 For more information, as well as an immediately useable, binary version of
-the Friendshipcoin client sofware, see http://www.friendshipcoins.com.
+the Friendshipcoin client software, see http://www.friendshipcoins.com.
 
 License
 -------
